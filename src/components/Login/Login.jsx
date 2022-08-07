@@ -13,13 +13,13 @@ const Login = () => {
     <> 
       <div className="container" id="login_container">
     <div className="row justify-content-center">
-    <div className="col">
+    <div className="col" id="loginImg">
     <img src={LoginImg}   id="loginImg"></img>
     </div>
     
     <div className="col" id="form_container">
        
-  <div id="form_container">
+ 
     <ReactRoundedImage 
           className="formImg"
           image={LoginImg}
@@ -60,7 +60,7 @@ const Login = () => {
   </button>
   </div> 
     </div>
-  </div>
+  
    
   
      
