@@ -14,21 +14,20 @@ const OTP = () => {
     const [OTP, setOTP] = useState("");
 
     const navigate =useNavigate();
-    const goToNewPassword=()=>{
-      navigate("/NewPassword")
+    const goToResetPassword=()=>{
+      navigate("/ResetPassword")
     };
   return (
     <>
-    <div className="container">
-    <div id='OTP-subcontainer'>
-    <div className="row">
-    <div className="col">
+   <div className="container" id="OTP_container">
+    <div className="row justify-content-center">
+    <div className="col" id="OTPimg">
        <img src={OTPimg} id="OTPimg"></img>
   </div>
+    
    
-  <div className="col" id='OTP-Form'>
+  <div className="col" id='OTPForm_container'>
       
-        <div >
     <ReactRoundedImage 
           className="formImg"
           image={OTPimg}
@@ -38,13 +37,15 @@ const OTP = () => {
           roundedSize="1"
           borderRadius="70"
         />
-        <br></br>
+       
+        <div id="form_heading">
     <h3>OTP Verification</h3>
-    <h6>Enter the OTP sent to your email address<br></br>
+    <h6 style={{color:"gray"}}>Enter the OTP sent to your email address<br></br>
     teachers@gmail.com to reset your password</h6>
-   
+       </div>
+   <div id="OTP_inputfields">
     <OTPInput
-    style={{width:"20px"}}
+  
     value={OTP}
       onChange={setOTP}
       autoFocus
@@ -53,23 +54,23 @@ const OTP = () => {
       disabled={false}
       secure
     />
-    <br></br>
+   </div>
    
-    <Link to ="/" id="resendOtpbtn">resend OTP</Link>
+    <Link to ="/" id="resendOtp_link">resend OTP</Link>
     {/* <ResendOTP handelResendClick={() => console.log("Resend clicked")} /> */}
-    <br></br>
-    <Button id ="ConfirmOTPbtn"variant="primary" type="submit"
-      onClick={()=>goToNewPassword()}>
-      Confirm OTP
-      </Button>
+ <br/>
+    <button type="button" className="btn-lg"onClick={goToResetPassword}
+  id="ConfirmOTPbtn">
+   Confirm OTP
+  </button>
    
     </div>
   
-   </div>
+  
     </div>
 
   </div>
-    </div>
+    
     </>
 
   )

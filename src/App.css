@@ -208,7 +208,7 @@ width: 30vw;
 }
  @media screen and (max-width: 480px) {
   #loginbtn {
-   width: 50vw;
+   width: 45vw;
     margin-top: 1rem;
     background-color: #FD8473;
     border: #FD8473;
@@ -216,118 +216,190 @@ width: 30vw;
     }
 }
 
-
- 
-  
-
-
 /* Forgot-page-css */
 #Forgotimg{
-  height: 95vh;
-  width: 40vw;
-  margin-top: auto;
-  margin-bottom: auto;
+  max-height: 100vh;
+  max-width: 50vw;
 }
-#forgot-formcontainer{
+@media screen and (max-width: 480px) {
+  #Forgotimg {
+    max-width: 95vw;
+    height: auto;
+  }
+    }
+#forgot_formcontainer{
   margin-top: auto;
   margin-bottom: auto;
-align-content: center;
- justify-content: center;
- border-color: white;
+  height: auto;
+ max-width: 50vw;
+ 
  }
+ @media screen and (max-width: 480px) {
+  #forgot_formcontainer {
+width: 100vw;
+height: auto;
+margin-top: auto;
+
+  }
+}
+#forgotform_heading{
+  margin-left: 2px;
+  
+}
+
  #ForgotInputfields{
-  text-align: justify;
-  margin-top: 6%;
-  width: 30vw;
-  height: 8vh;
-  border-radius: 30px;
+  max-height: 4rem;
+  max-width: 30vw;
+    border-radius: 25px;
+    margin-top: 2rem;
  }
-
-
-#SendOTPbtn{
-  width: 30vw;
-  height: 8vh;
-  margin-top: 10%;
-border-radius: 30px;
-  font-size: large;
-  background-color: #FD8473;
+ @media screen and (max-width: 480px) {
+  #ForgotInputfields {
+    max-width: 95vw;
+  margin-top: 1.5rem;
+    }
 }
 
-#OTPbox{
-  margin-top: 50px;
-  box-sizing: 20px;
-  height: 50px;
-  width: 50px;
+
+#sendotp_btn{
+  height: 4rem;
+width:30vw;
+  border-radius: 25px;
+  margin-top: 2rem;
+  background-color: #FD8473;
+  border: #FD8473;
+}
+@media screen and (max-width: 480px) {
+  #sendotp_btn {
+   width: 45vw;
+    margin-top: 1rem;
+    background-color: #FD8473;
+    border: #FD8473;
+  
+    }
 }
 
 /*OTP.jsx-page-css */
-#OTP-subcontainer{
-margin-left: auto;
-margin-right: auto;
-}
+
 
 #OTPimg{
-  height: 100vh;
-  width: 50vw;
-  margin-top: auto;
-  margin-bottom: auto;
-  
- }
-
- #OTP-Form{
-margin-top: auto;
-margin-bottom: auto;
- align-content: center;
-
-
+  max-height: 100vh;
+  max-width: 70vw;
 }
+@media screen and (max-width: 480px) {
+  #OTPimg {
+    max-width: 95vw;
+    height: auto;
+  }
+    }
 
- #resendOtpbtn{
+ #OTPForm_container{
+ margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+   max-width: 50vw;
+   
+   }
+   @media screen and (max-width: 480px) {
+    #OTPForm_container {
+  width: 100vw;
+  height: auto;
+  margin-top: auto;
+  
+    }
+  }
+  #form_heading{
+    margin-left: 0px;
+  }
+  #OTP_inputfields{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+ #resendOtp_link{
   color: #FD8473;
+
  }
  #ConfirmOTPbtn{
-  width: 20vw;
-  height: 8vh;
-  margin-top: 10%;
-border-radius: 30px;
-  font-size: large;
-  background-color: #FD8473;
+  height: 4rem;
+  width: 27vw;
+    border-radius: 25px;
+    margin-top: 3rem;
+    background-color: #FD8473;
+    border: #FD8473;
  }
+ @media screen and (max-width: 480px) {
+  #ConfirmOTPbtn {
+   width: 45vw;
+    margin-top: 1rem;
+    background-color: #FD8473;
+    border: #FD8473;
+  
+    }
+}
 
 /* reset-password-css */
 #resetimg{
-  height: 100vh;
-  width: 45vw;
+  max-height: 100vh;
+  max-width: 70vw;
+}
+@media screen and (max-width: 480px) {
+  #resetimg {
+    max-width: 95vw;
+    height: auto;
+  }
+    }
+#reset_formcontainer{
   margin-top: auto;
   margin-bottom: auto;
+  height: auto;
+ max-width: 50vw;
+}
+@media screen and (max-width: 480px) {
+  #reset_formcontainer {
+width: 100vw;
+height: auto;
+margin-top: auto;
 
+  }
+}
+#form_heading{
+  margin-left: 0px;
 }
 #ResetInputfields{
-  text-align: justify;
-  margin-top: 9%;
-  width: 30vw;
-  height: 8vh;
-  border-radius: 30px;
+  max-height: 4rem;
+  max-width: 30vw;
+    border-radius: 25px;
+    margin-top: 2rem;
 }
-#reset-formcontainer{
-  margin-top: auto;
-
-border-color: white;
- }
- #confirmPasswordBtn{
-  width: 30vw;
-  height: 8vh;
-  margin-top: 15%;
-border-radius: 30px;
-  font-size: large;
-  background-color: #FD8473;
- }
-
+@media screen and (max-width: 480px) {
+  #ResetInputfields {
+    max-width: 95vw;
+  margin-top: 1.5rem;
+    }
+}
+#ConfirmPassword_btn{
+  height: 4rem;
+  width:30vw;
+    border-radius: 25px;
+    margin-top: 2rem;
+    background-color: #FD8473;
+    border: #FD8473;
+}
+@media screen and (max-width: 480px) {
+  #ConfirmPassword_btn {
+   width: 45vw;
+    margin-top: 1rem;
+    background-color: #FD8473;
+    border: #FD8473;
+  
+    }
+}
 
 /* Dashboard css */
 #DashBoard{
   background-color: #EAF4FF;
   margin-top: 1rem;
+  
   
 }
 #header{
@@ -337,28 +409,29 @@ border-radius: 30px;
   background-color: rgba(135, 207, 235, 0.381);
 }
 #search-bar{
-  margin-top: 1rem;
+ 
   height: 1.5rem;
   width: 15rem;
   text-align: left;
   border-radius: 30px;
   border: none;
+ 
 
 }
-#header-icon{
-  margin-right: 5.2rem;
-
+#header-icons{
+display: flex;
+align-items: center;
+align-content: center;
 }
 #logout-icon{
 height:3vh;
-margin-top: -5px;
+margin-top: 0px;
 
 }
 #notification-icon{
-  margin-top: -5px;
+  margin-top: 0px;
  height:3vh;
-  margin-right: 1rem;
-  margin-left: 1rem;
+
 }
 
 #maincard{

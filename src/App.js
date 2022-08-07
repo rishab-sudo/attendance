@@ -8,7 +8,7 @@ import DailyAttendance from "./components/DailyAttendance/DailyAttendance";
 import Login from "./components/Login/Login";
 import ForgotPassword from "./components/Login/ForgotPassword"
 import OTP from "./components/Login/OTP"
-import NewPassword from "./components/Login/NewPassword"
+import ResetPassword from "./components/Login/ResetPassword"
 import PrivateRoutes from  "./utils/PrivateRoutes"
 
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/ForgotPassword" element={<ForgotPassword/>}/>
           <Route path="/OTP" element={<OTP/>}/>
-          <Route path="/NewPassword" element={<NewPassword/>}/>
+          <Route path="/ResetPassword" element={<ResetPassword/>}/>
           
           <Route element={<PrivateRoutes />}>
           <Route path="/Dashboard" element={<DashBoard />} />

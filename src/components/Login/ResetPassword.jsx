@@ -16,16 +16,15 @@ const DashBoard = () => {
     };
   return (
     <>
-    <div className="container ">
-    <div className='forgot-subcontainer'>
-    <div className="row">
-  <div className="col">
+     <div className="container" id="login_container">
+     <div className="row justify-content-center">
+   
+     <div className="col" id="resetimg">
       <img src={ResetPasswordImg}id="resetimg"></img>
    </div>
    
-   <div className="col" id="reset-formcontainer">
-      <Container  >
-        <div id='reset-Form'>
+   <div className="col" id="reset_formcontainer">
+    
     <ReactRoundedImage 
           className="formImg"
           image={ResetPasswordImg}
@@ -35,29 +34,28 @@ const DashBoard = () => {
           roundedSize="1"
           borderRadius="70"
         />
+         <div id="form_heading">
     <h3>Reset Password </h3>
-    <h6>Enter your password and login into your account</h6>
-    <Form style={{width:"350px",height:"450px"}}>
-   
-    <div class="form-floating">
-  <input type="password" class="form-control" id="ResetInputfields" placeholder="Password"/>
-  <label for="floatingPassword">Password</label>
-</div>
-      
-      
-      <div class="form-floating">
-  <input type="password" class="form-control" id="ResetInputfields" placeholder="Confirm Password"/>
-  <label for="floatingPassword">Confirm Password</label>
-</div>
-     
-    
-    <Button id ="confirmPasswordBtn"variant="primary" type="submit" 
-      onClick={()=>goToLogin()}>
-     Confirm Password
-      </Button>
-    </Form>
+    <h6 style={{color:"gray"}}>Enter your password and login into your account</h6>
     </div>
-    </Container>
+  
+    <div className="form-floating mb-3">
+    <input type="password" class="form-control" id="ResetInputfields" placeholder="Password"/>
+    <label for="floatingPassword">Password</label>
+  </div>
+      
+      
+  <div className="form-floating mb-3">
+    <input type="password" class="form-control" id="ResetInputfields" placeholder="Password"/>
+    <label for="floatingPassword">Confirm Password</label>
+  </div>
+     
+  <button type="button" className="btn-lg"onClick={goToLogin}
+  id="ConfirmPassword_btn">
+   Confirm Password
+  </button>
+    
+  
   
     </div>
     </div>
@@ -65,7 +63,7 @@ const DashBoard = () => {
   </div>
 
   
-    </div>
+   
     </>
 
   )

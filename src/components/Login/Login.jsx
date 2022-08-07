@@ -7,7 +7,7 @@ import LoginImg from "../../assests/LoginImg.png"
 const Login = () => {
   const navigate =useNavigate();
   const goToForgotPassword=()=>{
-    navigate("/ForgotPassword")
+    navigate("./DashBoard")
   };
   return (
     <> 
@@ -18,9 +18,7 @@ const Login = () => {
     </div>
     
     <div className="col" id="form_container">
-       
- 
-    <ReactRoundedImage 
+       <ReactRoundedImage 
           className="formImg"
           image={LoginImg}
           roundedColor="#321124"
@@ -52,7 +50,7 @@ const Login = () => {
   <label className="form-check-label" for="flexCheckDefault" style={{marginLeft:"5px"}}>
     Keep me logged in
   </label>
-<Link to="/goToForgotPassword" id="forgot_password_link" >Forgot Password?</Link>
+<Link to="./ForgotPassword" id="forgot_password_link" >Forgot Password?</Link>
 </div>
   <button type="button" className="btn-lg"onClick={goToForgotPassword}
   id="loginbtn">

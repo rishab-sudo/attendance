@@ -30,9 +30,9 @@ const Cards = () => {
   return (
     <>
 
-<div  id="header">
-    <div  id="header-icon">
+<div  id="header" style={{width:""}}>
     
+<div class="d-flex justify-content-end" id="header-icons">
      <input
     id= "search-bar"
    type="search"
@@ -42,10 +42,10 @@ const Cards = () => {
    />
    <img src={notification} id="notification-icon" />    
    <img src={logout} id="logout-icon"/>
- 
   </div>
-</div> 
  
+</div> 
+
 
 <div id="DashBoard">
 <Container id='maincard'>
