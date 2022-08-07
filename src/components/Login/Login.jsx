@@ -24,8 +24,8 @@ const Login = () => {
           className="formImg"
           image={LoginImg}
           roundedColor="#321124"
-          imageWidth="120"
-          imageHeight="120"
+          imageWidth="100"
+          imageHeight="100"
           roundedSize="0"
           borderRadius="70"
         />
