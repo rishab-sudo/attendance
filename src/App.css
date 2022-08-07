@@ -1,0 +1,533 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+}
+main {
+  padding-left: 230px;
+
+}
+@media (max-width: 400px) {
+.main{
+
+
+  }
+}
+
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+/* overflow-y: auto; */
+.sidebar{
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+  position: fixed;
+ z-index: 99;
+ 
+}
+  /* media queries */
+  @media (max-width: 400px) {
+    .sidebar{
+  position: fixed;
+  height: 100vh;
+    }
+  }
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  margin-top: 45px;
+ margin-left: 32px;
+  font-size: 15px;
+  line-height: 0;
+  text-align: center;
+}
+.logo-text{
+  font-size: 1.rem;
+  text-align: center;
+  margin-top:35px;
+  margin-left:px;
+}
+.bars {
+  width:30px;
+}
+.hide {
+  display: none;
+}
+.routes {
+margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: px;
+}
+.link {
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  color: white;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+  margin-left: 3px;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  color: darkblue;
+  border-right: 4px solid white;
+background-color: #fff;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  color: darkblue;
+background-color: #fff;
+  border-right: 4px solid white;
+  
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 1.2rem;
+ 
+  }
+
+.menu {
+  display: flex;
+  color: white;
+  padding: 10px 80px;
+  padding-left: 16px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap:10px;
+  
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+} 
+
+
+/* Login-page-css */
+#login_container{
+  display: flex;
+}
+
+
+#loginImg{
+  max-height: 100vh;
+  max-width: 100vw;
+ }
+ @media screen and (max-width: 480px) {
+  #loginImg {
+max-width: 80vw;
+height: auto;
+
+    }
+}
+#form_container{
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+@media screen and (max-width: 480px) {
+  #form_container {
+width: 76%;
+height: auto;
+margin-top: -5px;
+margin-left: 1%;
+margin-right: 1%;
+  }
+}
+#form_heading{
+  margin-left: 2px;
+  text-align: justify;
+}
+#formInputs{
+height: 4rem;
+width: 30vw;
+  border-radius: 25px;
+  margin-top: 2.5rem;
+  }
+ @media screen and (max-width: 480px) {
+  #formInputs {
+    width: 75vw;
+    margin-top: 2rem;
+    }
+}
+#chechbox{
+  display: flex;
+}
+#forgot_password_link{
+  
+margin-left: 180px;
+color: #FD8473;
+}
+#loginbtn{
+  height: 4rem;
+width: 30vw;
+  border-radius: 25px;
+  margin-top: 1rem;
+  background-color: #FD8473;
+  border: #FD8473;
+}
+ @media screen and (max-width: 480px) {
+  #loginbtn {
+    width: 85vw;
+    margin-top: 1rem;
+    background-color: #FD8473;
+    border: #FD8473;
+    }
+}
+
+
+ 
+  
+
+
+/* Forgot-page-css */
+#Forgotimg{
+  height: 95vh;
+  width: 40vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#forgot-formcontainer{
+  margin-top: auto;
+  margin-bottom: auto;
+align-content: center;
+ justify-content: center;
+ border-color: white;
+ }
+ #ForgotInputfields{
+  text-align: justify;
+  margin-top: 6%;
+  width: 30vw;
+  height: 8vh;
+  border-radius: 30px;
+ }
+
+
+#SendOTPbtn{
+  width: 30vw;
+  height: 8vh;
+  margin-top: 10%;
+border-radius: 30px;
+  font-size: large;
+  background-color: #FD8473;
+}
+
+#OTPbox{
+  margin-top: 50px;
+  box-sizing: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+/*OTP.jsx-page-css */
+#OTP-subcontainer{
+margin-left: auto;
+margin-right: auto;
+}
+
+#OTPimg{
+  height: 100vh;
+  width: 50vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+ }
+
+ #OTP-Form{
+margin-top: auto;
+margin-bottom: auto;
+ align-content: center;
+
+
+}
+
+ #resendOtpbtn{
+  color: #FD8473;
+ }
+ #ConfirmOTPbtn{
+  width: 20vw;
+  height: 8vh;
+  margin-top: 10%;
+border-radius: 30px;
+  font-size: large;
+  background-color: #FD8473;
+ }
+
+/* reset-password-css */
+#resetimg{
+  height: 100vh;
+  width: 45vw;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+#ResetInputfields{
+  text-align: justify;
+  margin-top: 9%;
+  width: 30vw;
+  height: 8vh;
+  border-radius: 30px;
+}
+#reset-formcontainer{
+  margin-top: auto;
+
+border-color: white;
+ }
+ #confirmPasswordBtn{
+  width: 30vw;
+  height: 8vh;
+  margin-top: 15%;
+border-radius: 30px;
+  font-size: large;
+  background-color: #FD8473;
+ }
+
+
+/* Dashboard css */
+#DashBoard{
+  background-color: #EAF4FF;
+  margin-top: 1rem;
+  
+}
+#header{
+  margin-top: auto;
+  width: 100%;
+  height: 4.5rem;
+  background-color: rgba(135, 207, 235, 0.381);
+}
+#search-bar{
+  margin-top: 1rem;
+  height: 1.5rem;
+  width: 15rem;
+  text-align: left;
+  border-radius: 30px;
+  border: none;
+
+}
+#header-icon{
+  margin-right: 5.2rem;
+
+}
+#logout-icon{
+height:3vh;
+margin-top: -5px;
+
+}
+#notification-icon{
+  margin-top: -5px;
+ height:3vh;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#maincard{
+padding: 2px;
+width: 75vw;
+}
+#cards{
+  background-color: #FD8473;
+  border-radius: 30px;
+  margin-top: 80px;
+}
+    
+.card-title{
+  font-size: 3rem;
+}
+ #D-form-container{
+  width: 77vw;
+  height: 650px;
+  background-color: #F5FAFD;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 50px
+}
+ #form-Control{
+margin-block-end: 35px;
+margin-top: 5px;
+margin-left: 25px;
+width: 502px;
+height: 62px;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+ }
+
+.heading{
+  font-size: 1.2rem;
+  }
+.underline {
+  width: auto;
+  height: 0.1rem;
+margin-top: -4px;
+background-color:#FD8473;
+}
+.qr-box{
+  margin-top: 50px;
+  margin-left: 0px;
+ }
+ #lables{
+  margin-left: 32px;
+  margin-top: 15px;
+ }
+ #QRicon{
+  height:20px;
+  width:20px;
+  margin-left: 15px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+ }
+ #QRtext{
+margin-top: -8px;
+font-size: 1.1rem;
+ }
+ #shareicon{
+  height:20px;
+  width:20px;
+display: flex;
+margin-left: auto;
+margin-top: -28px;
+ }
+.QRbtn{
+  font-size: large;
+border: none;
+width: 312px;
+height: 64px;
+margin-left: 2.5rem;
+background-color: #FD8473;
+color: #fff;
+border-radius: 30px;
+}
+#table-container{
+  width: 77vw;
+  height: 650px;
+  background-color: #F5FAFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+#tr1{
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#tr2{
+  background-color: white;
+  margin-top: 20px;
+}
+#contact-container{
+  width: 77vw;
+  height: 650px;
+  background-color: #F5FAFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 50px;
+
+}
+#heading{
+  font-size: 1.3rem;
+  margin-top: -70px;
+  margin-left: 1rem;
+}
+#contact-card{
+  margin-top: 80px;
+  border-radius: 60px;
+  color: white;
+  background-color: #002154;
+}
+#underline{
+  width: auto;
+  height: 0.1rem;
+margin-top: 6px;
+margin-bottom: 25px;
+background-color:white;
+}
+.card-body{
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#card-text{
+  margin-left: 5px;
+  margin-top: 1px;
+  
+}
+#contact-form{
+  margin-right: 20px;
+}
+#mailicon{
+margin-right: 15px;
+
+}
+#phonicon{
+  margin-top: 1px;
+  margin-right: 14px;
+  color: black;
+}
+#clockicon{
+margin-right: 14px;
+margin-top: 0px;
+}
+
+#form-Control-email{
+margin-top: -20px;
+height: 64px;
+width: 510px;
+border-radius: 30px;
+margin-left: 25px;
+}
+#form-Control-mssg{
+height: 105px;
+width: 510px;
+border-radius: 30px;
+margin-left: 25px;
+margin-top: 10px;
+text-align: start;
+}
+.table{
+  width: 1000px;
+  margin-left: "";
+}
+/* .notification-logout-icon{
+  display: flex;
+} */
+.col-4{
+  margin-left: auto;
+}
+

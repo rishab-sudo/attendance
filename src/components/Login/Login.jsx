@@ -1,0 +1,76 @@
+import React from 'react';
+import {Link} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import ReactRoundedImage from "react-rounded-image";
+import LoginImg from "../../assests/LoginImg.png"
+
+const Login = () => {
+  const navigate =useNavigate();
+  const goToForgotPassword=()=>{
+    navigate("/ForgotPassword")
+  };
+  return (
+    <> 
+      <div className="container" id="login_container">
+    <div className="row justify-content-center">
+    <div className="col">
+    <img src={LoginImg}   id="loginImg"></img>
+    </div>
+    
+    <div className="col" id="form_container">
+       
+  <div id="form_container">
+    <ReactRoundedImage 
+          className="formImg"
+          image={LoginImg}
+          roundedColor="#321124"
+          imageWidth="120"
+          imageHeight="120"
+          roundedSize="0"
+          borderRadius="70"
+        />
+        <div id="form_heading">
+        <h3>Welcome Back!</h3>
+        <h6 style={{color:"gray"}}>Login to your account to continue</h6>
+        </div>
+    <div className="form-floating mb-3">
+    <select className="form-select" id="formInputs" aria-label="Floating label select example" style={{paddingTop:"2px"}}>
+    <option selected>teacher</option>
+    <option value="1">student</option>
+    </select>
+</div>
+    <div className="form-floating mb-3">
+    <input type="email" class="form-control" id="formInputs" placeholder="name@example.com"/>
+    <label for="floatingInput">Email address</label>
+  </div>
+    <div className="form-floating mb-3">
+    <input type="password" class="form-control" id="formInputs" placeholder="Password"/>
+    <label for="floatingPassword">Password</label>
+  </div>
+  <div className="form-check" id="chechbox">
+  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" style={{}}/>
+  <label className="form-check-label" for="flexCheckDefault" style={{marginLeft:"5px"}}>
+    Keep me logged in
+  </label>
+<Link to="/goToForgotPassword" id="forgot_password_link" >Forgot Password?</Link>
+</div>
+  <button type="button" className="btn-lg"onClick={goToForgotPassword}
+  id="loginbtn">
+    Log In
+  </button>
+  </div> 
+    </div>
+  </div>
+   
+  
+     
+     
+  
+  
+  </div>
+  
+  </>
+  )
+}
+
+export default Login
