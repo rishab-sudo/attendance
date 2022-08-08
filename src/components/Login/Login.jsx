@@ -13,6 +13,7 @@ const Login = () => {
     <> 
       <div className="container" id="login_container">
     <div className="row justify-content-center">
+    
     <div className="col" id="loginImg">
     <img src={LoginImg}   id="loginImg"></img>
     </div>
@@ -32,7 +33,7 @@ const Login = () => {
         <h6 style={{color:"gray"}}>Login to your account to continue</h6>
         </div>
     <div className="form-floating mb-3">
-    <select className="form-select" id="formInputs" aria-label="Floating label select example" style={{paddingTop:"2px"}}>
+    <select className="form-select" id="formInputs" aria-label="Floating label select example" style={{paddingTop:"1px"}}>
     <option selected>teacher</option>
     <option value="1">student</option>
     </select>
@@ -60,11 +61,6 @@ const Login = () => {
     </div>
   
    
-  
-     
-     
-  
-  
   </div>
   
   </>
@@ -72,3 +68,8 @@ const Login = () => {
 }
 
 export default Login
+  
+     
+     
+  
+  

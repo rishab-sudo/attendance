@@ -16,7 +16,7 @@ const DashBoard = () => {
     };
   return (
     <>
-     <div className="container" id="login_container">
+     <div className="container" id="reset_container">
      <div className="row justify-content-center">
    
      <div className="col" id="resetimg">

@@ -10,30 +10,32 @@ const DashBoard = () => {
  
 
   return (
+    <>
 
-
-<div style={{backgroundColor:"pink"}}>
-<div class="d-flex bd-highlight">
-  <div class="p-2 flex-shrink-1 bd-highlight"> <SideBar/></div>
-  <div class="p-2 w-100 bd-highlight"> <Cards/></div>
+<div style={{backgroundColor:"blue"}}>
+ <SideBar/>
+<div style={{marginLeft:"230px"}}>
+ <Cards/>
+</div>
 </div>
 
+</>
+
+ )
+}
+
+export default DashBoard
    
 
    
 
 
  
- </div>
+
   
      
     
     
     
- 
-  )
-}
-
-export default DashBoard
           
              

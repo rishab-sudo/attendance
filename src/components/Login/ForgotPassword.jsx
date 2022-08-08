@@ -40,7 +40,7 @@ const ForgotPassword = () => {
   </div>
     <form >
     <div className="form-floating mb-3">
-    <select class="form-select"  id="ForgotInputfields" aria-label="Floating label select example">
+    <select class="form-select"  id="ForgotInputfields" aria-label="Floating label select example" style={{paddingTop:"1px"}}>
     <option selected>teacher</option>
     <option value="1">student</option>
   </select>
