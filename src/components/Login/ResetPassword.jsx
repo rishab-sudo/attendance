@@ -24,7 +24,6 @@ const DashBoard = () => {
    </div>
    
    <div className="col" id="reset_formcontainer">
-    
     <ReactRoundedImage 
           className="formImg"
           image={ResetPasswordImg}
@@ -38,13 +37,12 @@ const DashBoard = () => {
     <h3>Reset Password </h3>
     <h6 style={{color:"gray"}}>Enter your password and login into your account</h6>
     </div>
-  
+    
     <div className="form-floating mb-3">
     <input type="password" class="form-control" id="ResetInputfields" placeholder="Password"/>
     <label for="floatingPassword">Password</label>
   </div>
-      
-      
+  
   <div className="form-floating mb-3">
     <input type="password" class="form-control" id="ResetInputfields" placeholder="Password"/>
     <label for="floatingPassword">Confirm Password</label>
@@ -54,19 +52,21 @@ const DashBoard = () => {
   id="ConfirmPassword_btn">
    Confirm Password
   </button>
-    
-  
-  
+      
     </div>
     </div>
 
   </div>
-
-  
-   
     </>
 
   )
 }
 
 export default DashBoard
+      
+    
+  
+  
+
+  
+   

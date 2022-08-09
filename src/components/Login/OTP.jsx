@@ -21,13 +21,13 @@ const OTP = () => {
     <>
    <div className="container" id="OTP_container">
     <div className="row justify-content-center">
+   
     <div className="col" id="OTPimg">
        <img src={OTPimg} id="OTPimg"></img>
-  </div>
+    </div>
     
    
   <div className="col" id='OTPForm_container'>
-      
     <ReactRoundedImage 
           className="formImg"
           image={OTPimg}
@@ -37,15 +37,15 @@ const OTP = () => {
           roundedSize="1"
           borderRadius="70"
         />
-       
         <div id="form_heading">
     <h3>OTP Verification</h3>
     <h6 style={{color:"gray"}}>Enter the OTP sent to your email address<br></br>
     teachers@gmail.com to reset your password</h6>
        </div>
+      
+       
    <div id="OTP_inputfields">
     <OTPInput
-  
     value={OTP}
       onChange={setOTP}
       autoFocus
@@ -55,7 +55,6 @@ const OTP = () => {
       secure
     />
    </div>
-   
     <Link to ="/" id="resendOtp_link">resend OTP</Link>
     {/* <ResendOTP handelResendClick={() => console.log("Resend clicked")} /> */}
  <br/>
@@ -63,17 +62,19 @@ const OTP = () => {
   id="ConfirmOTPbtn">
    Confirm OTP
   </button>
-   
+  
     </div>
-  
-  
     </div>
 
   </div>
-    
     </>
 
   )
 }
 
 export default OTP
+   
+   
+  
+  
+    
