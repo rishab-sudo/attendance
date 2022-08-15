@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SideBar from "../src/SideBar/SideBar"
 import DashBoard from "./components/DashBoard/DashBoard";
 import DailyAttendance from "./components/DailyAttendance/DailyAttendance";
+import StudentAttendance from "./components/StudentAttendance/StudentAttendance";
 import Login from "./components/Login/Login";
 import ForgotPassword from "./components/Login/ForgotPassword"
 import OTP from "./components/Login/OTP"
@@ -29,6 +30,7 @@ function App() {
           <Route element={<PrivateRoutes />}>
           <Route path="/Dashboard" element={<DashBoard />} />
           <Route path="/DailyAttendance" element={<DailyAttendance />} />
+          <Route path="/StudentAttendance" element={<StudentAttendance />} />
           </Route>
         </Routes>
  

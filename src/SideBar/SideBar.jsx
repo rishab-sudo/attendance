@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 import { BiAnalyse, BiSearch } from "react-icons/bi";
@@ -31,14 +31,14 @@ const routes = [
     icon: <FaUser />,
     subRoutes: [
       {
-        path: "/settings/profile",
-        name: "Profile ",
-        icon: <FaUser />,
+        path: "/StudentAttendance",
+        name: "StudentAttendance",
+        icon: <FaLock />,
       },
       {
-        path: "/settings/Attendance",
-        name: "Attendance",
-        icon: <FaLock />,
+        path: "/StudentProfile",
+        name: "StudentProfile ",
+        icon: <FaUser />,
       },
       
     ],
@@ -102,9 +102,9 @@ const SideBar = ({ children }) => {
             width: isOpen ? "230px" : "44px",
 
             transition: {
-              duration: 0.5,
-              type: "spring",
-              damping: 12,
+             duration: 0.5,
+               type: "spring",
+               damping: 12,
             },
           }}
           className={`sidebar `}
@@ -170,7 +170,7 @@ const SideBar = ({ children }) => {
               }
 
               return (
-                <NavLink
+                <Link
                   to={route.path}
                   key={index}
                   className="link"
@@ -190,7 +190,7 @@ const SideBar = ({ children }) => {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </NavLink>
+                </Link>
               );
             })}
           </section>

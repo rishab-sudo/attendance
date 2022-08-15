@@ -79,9 +79,10 @@ margin-top: 15px;
   gap: 5px;
   margin-left: px;
 }
+/* icons */
 .link {
-  height: 50px;
-  font-size: 1.5rem;
+  height: 45px;
+  font-size: 1.3rem;
   display: flex;
   color: white;
 border-top-left-radius: 50px;
@@ -698,6 +699,10 @@ width: 18px;
 }
 
 /* Daily attendance css */
+#DailyAttendance_mainContainer{
+  background-color: #EAF4FF;
+  height: 100vh;
+}
 #Daily_Header{
   width: auto;
   height: 9.5rem;
@@ -746,6 +751,8 @@ width: 18px;
   }
 #Daily_table_container{
   width: 78%;
+  height: auto;
+  margin-bottom: 2rem;
   margin-left: 270px;
 }
 #circle{
@@ -753,10 +760,32 @@ height: 25px;
 margin-top: 0px;
 border-radius: 50%;
  border: .1px solid ;
+ color: lightgray;
  margin-right: 8px;
   
 }
 
+/* Student Attendance Css */
+#studentAttendance_mainContainer{
+  background-color: #EAF4FF;
+  height: 100vh;
+}
+#Student_Table_Container{
+  background-color: #F9FCFD;
+  margin-left: 270px; 
+  height: auto;
+  width: 78%;
+  border-radius: 20px;
+  }
+#table_header_content{
+  display: flex;
+  padding-top: 2.5rem;
+}
+#Student_table{
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+ 
 
-
-
+ }
