@@ -13,7 +13,7 @@ const DashBoard = () => {
   return (
     <>
 <div style={{backgroundColor:"#EAF4FF"}}>
-   <SideBar/>
+   <SideBar style={{height:""}}/>
    <Header/>
 <div style={{height:".5rem", backgroundColor:"white"}}></div>
   <div style={{marginLeft:"230px"}}>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import DatePicker from 'react-date-picker';
 import homeicon from "../../assests/homeicon.png"
 import forwordicon from "../../assests/forwordicon.png"
 import backicon from "../../assests/backicon.png"
@@ -9,26 +10,11 @@ import{FaShareAlt} from "react-icons/fa";
 import{FaEnvelope} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
 import {FaClock} from "react-icons/fa";
-
+import items from "./Data"
 
 const Cards = () => {
-  // const [searchInput, setSearchInput] = useState("");
-  // const countries = [
-  //   { name: "Belgium", continent: "Europe" },
-  //   { name: "India", continent: "Asia" },
-  //   { name: "Bolivia", continent: "South America" },
-  //   { name: "Ghana", continent: "Africa" },
-  //   { name: "Japan", continent: "Asia" },
-  // ];
-  // const handleChange = (e) => {
-  //   e.preventDefault();
-  //   setSearchInput(e.target.value);
-  // };
-  // if (searchInput.length > 0) {
-  //     countries.filter((country) => {
-  //     return country.name.match(searchInput);
-  // });
-  // }
+
+  const [value, onChange] = useState(new Date());
 
   return (
     <>
@@ -132,18 +118,19 @@ const Cards = () => {
           <div >
             <div id="table_heading_container">
             <img src={homeicon} id="homeicon"/> 
-           <p id="QR_text">Class Schedule</p>
-            <img src={backicon} id="backicon"/>
-            <p id="timeText">22/06/2022</p>
-            <img src={forwordicon}id="forwordicon"/>
+           <p id="table_header_text">Class Schedule</p>
+           <div id="datepicker">
+           <DatePicker onChange={onChange} value={value} />
+           </div>
             </div>
             <div className="underline"> </div>
         </div>
 
   <div className="container" id="table_row1">
-    <div className="row">
-    <div className="col" id="table_row1_text">
-      <div>Classes</div>
+    <div className="row justify-content-center">
+      <div id="table_row1_text">
+    <div className="col" >
+      Classes
     </div>
     <div className="col">
       Subjects
@@ -153,90 +140,34 @@ const Cards = () => {
     </div>
     </div>
     </div>
-
-    <div className="container" id="table_row2">
-    <div className="row">
-    <div className="col" id="table_text">
-      <div>CSE-1</div>
-    </div>
-    <div className="col">
-      Computer Applications
-    </div>
-    <div className="col">
-    9:00AM-11:00AM
-    </div>
-    </div>
     </div>
 
-    <div className="container" id="table_row2">
-    <div className="row">
-    <div className="col" id="table_text">
-      <div>CSE-1</div>
-    </div>
-    <div className="col">
-    Computer Applications
-    </div>
-    <div className="col">
-    9:00AM-11:00AM
-    </div>
-    </div>
-    </div>
+    {items.map(item => (  
+         <div className="container" id="table_row2">
+         <div className="row">
+         <div id="table_text">
+         <div className="col">
+          {item.Classes}
+         </div>
+         <div className="col">
+          {item.Subjects}
+         </div>
+         <div className="col">
+         {item.TimeSlot}
+         </div>
+         </div>
+         </div>
+         
+         </div>
+        ))}  
 
-    <div className="container" id="table_row2">
-    <div className="row">
-    <div className="col" id="table_text">
-      <div>CSE-1</div>
-    </div>
-    <div className="col">
-    Computer Applications
-    </div>
-    <div className="col">
-    9:00AM-11:00AM
-    </div>
-    </div>
-    </div>
-
-    <div className="container" id="table_row2">
-    <div className="row">
-    <div className="col" id="table_text">
-      <div>CSE-1</div>
-    </div>
-    <div className="col">
-    Computer Applications
-    </div>
-    <div className="col">
-    9:00AM-11:00AM
-    </div>
-    </div>
-    </div>
-
-    <div className="container" id="table_row2">
-    <div className="row">
-    <div className="col" id="table_text">
-      <div>CSE-1</div>
-    </div>
-    <div className="col">
-    Computer Applications
-    </div>
-    <div className="col">
-      9:00AM-11:00AM
-    </div>
-    </div>
-    </div>
+   
+    
 
 </div>
 </div>
         
- 
-
- 
- 
-
-
-     
-
-
-{/* contact-icon-jsx-begins */}
+ {/* contact-icon-jsx-begins */}
   <div class="container" id="contact_container">
   <div class="row">
   <div>

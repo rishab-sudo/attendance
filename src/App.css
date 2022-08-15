@@ -435,6 +435,8 @@ margin-top: 0px;
 #notification-icon{
   margin-top: 0px;
  height:3vh;
+ margin-right: 1rem;
+ margin-left: 1rem;
 
 }
 #card_page{
@@ -443,7 +445,7 @@ margin-top: 0px;
 }
 #cards{
   margin-top: 2rem;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   background-color: #FD8473;
   border-radius: 35px;
 }
@@ -474,8 +476,8 @@ margin-top:-2.7rem;
   display: flex;
 }
 #QR_text{
-  font-size: 1.5rem;
-  margin-top: 0px;
+  font-size: 1.3rem;
+  margin-top: 2px;
 }
 .underline {
    margin-left: 4rem;
@@ -537,11 +539,15 @@ background-color:#FD8473;
   border-radius: 20px;
   margin-bottom: 2rem;
   }
-/* table-container-css */
+/* dashborad-table-container-css */
 #table_heading_container{
   margin-top: 2rem;
   margin-left: 4rem;
   display: flex;
+}
+#table_header_text{
+  font-size: 1.3rem;
+  margin-top: 5px;
 }
 #homeicon{
   margin-top: 5px;
@@ -549,22 +555,13 @@ background-color:#FD8473;
   width:27px;
   margin-right: .5rem;
 }
-#backicon{
-  margin-top: 5px;
-  margin-right: 1rem;
-  margin-left: auto;
-  height:20px;
-  width:20px;
-}
-#forwordicon{
-  margin-top: 5px;
-  margin-right: 4.2rem;
-  height:20px;
-  width:20px;
-}
-#timeText{
- margin-top: 2px;
-  margin-right: 1rem;
+#datepicker{
+margin-left: auto;
+margin-right: 4rem;
+margin-top:5px;
+height: 2rem;
+width: auto;
+border: solid;
 }
   #table_container{
     margin-top: 2rem;
@@ -576,25 +573,33 @@ background-color:#FD8473;
     border-radius: 30px;
   }
   #table_row1{
+    color: #002154;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    background-color: #F5FAFD;
    width: 70vw;
     height: 4rem;
     border-radius: 20px;
-  }
-  #table_row1_text{
-    margin-left: 11rem;
   }
   #table_row2{
     background-color: white;
     width: 70vw;
     height: 4rem;
-    margin-top: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
     border-radius: 20px;
   }
+ 
+  #table_row1_text{
+   display: flex;
+    text-align: center;
+  }
   #table_text{
-    margin-left: 9.5rem;
+    padding-top: 18px;
+    display: flex;
+    text-align: center;
   }
   
-
   /* contact-container-css */
 #contact_container{
   margin-top: 2rem;
@@ -692,12 +697,66 @@ height: 18px;
 width: 18px;
 }
 
-
-.
-/* .notification-logout-icon{
-  display: flex;
-} */
-.col-4{
-  margin-left: auto;
+/* Daily attendance css */
+#Daily_Header{
+  width: auto;
+  height: 9.5rem;
+  background-color: #FD8473;
 }
+#subHeader_container{
+  margin-left: 270px;
+}
+#content_container{
+  display: flex;
+}
+#headingg{
+  color: #002154;
+  font-size: 1.3rem;
+  padding-top: 12px;
+  margin-left: 2px;
+}
+#sub_heading{
+  color: #F5FAFD;
+  margin-top: -12px;
+  margin-left: 2px;
+}
+#srch_icon_container{
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  border-radius: 10px;
+  width: 3rem;
+  height: 2.5rem;
+  background-color: #002154;
+  color: white;
+}
+#srch_icon{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 14px;
+}
+
+#Daily_datepicker{
+  margin-left: auto;
+  margin-right: 4rem;
+  margin-top:8px;
+  height: 2rem;
+  width: auto;
+  border: solid;
+  }
+#Daily_table_container{
+  width: 78%;
+  margin-left: 270px;
+}
+#circle{
+height: 25px;
+margin-top: 0px;
+border-radius: 50%;
+ border: .1px solid ;
+ margin-right: 8px;
+  
+}
+
+
+
 
