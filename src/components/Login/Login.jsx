@@ -18,7 +18,7 @@ const Login = () => {
     <img src={LoginImg}   id="loginImg"></img>
     </div>
     
-    <div className="col" id="form_container">
+    <div className="col" id="form_container" style={{border:"solid",borderColor:"#eeeeee"}}>
        <ReactRoundedImage 
           className="formImg"
           image={LoginImg}
@@ -34,8 +34,8 @@ const Login = () => {
         </div>
     <div className="form-floating mb-3">
     <select className="form-select" id="formInputs" aria-label="Floating label select example" style={{paddingTop:"1px"}}>
-    <option selected>teacher</option>
-    <option value="1">student</option>
+    <option selected>Teacher</option>
+    <option value="1">Student</option>
     </select>
 </div>
     <div className="form-floating mb-3">
@@ -46,11 +46,14 @@ const Login = () => {
     <input type="password" class="form-control" id="formInputs" placeholder="Password"/>
     <label for="floatingPassword">Password</label>
   </div>
-  <div className="form-check" id="chechbox">
+  
+  <div id="chechbox">
+  <div className="form-check" >
   <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" style={{}}/>
   <label className="form-check-label" for="flexCheckDefault" style={{marginLeft:"5px"}}>
     Keep me logged in
   </label>
+</div>
 <Link to="./ForgotPassword" id="forgot_password_link" >Forgot Password?</Link>
 </div>
   <button type="button" className="btn-lg"onClick={goToForgotPassword}

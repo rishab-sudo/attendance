@@ -23,7 +23,7 @@ const DashBoard = () => {
       <img src={ResetPasswordImg}id="resetimg"></img>
    </div>
    
-   <div className="col" id="reset_formcontainer">
+   <div className="col" id="reset_formcontainer" style={{border:"solid",borderColor:"#eeeeee",}}>
     <ReactRoundedImage 
           className="formImg"
           image={ResetPasswordImg}

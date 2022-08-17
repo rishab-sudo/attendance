@@ -23,7 +23,7 @@ const ForgotPassword = () => {
      </div>
      
 
-     <div className="col"  id="forgot_formcontainer" >
+     <div className="col"  id="forgot_formcontainer" style={{border:"solid",borderColor:"#eeeeee"}}>
     <ReactRoundedImage 
           className="formImg"
           image={ForgotPasswordImg}
@@ -33,9 +33,9 @@ const ForgotPassword = () => {
           roundedSize="0"
           borderRadius="70"
         />
-  <div className="forgotform_heading">
+  <div id="forgotform_heading">
     <h3>Forgot Password ?</h3>
-    <h6>Enter your email address to reset your password </h6>
+    <h6 style={{color:"gray"}}>Enter your email address to reset your password </h6>
   </div>
         
     <form >

@@ -9,12 +9,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import data from "./Dailydata"
 import { FaCheckCircle } from "react-icons/fa";
 
+
 function BasicExample() {
 
   const [value, onChange] = useState(new Date());
    
     return (
     <>
+
     <Sidebar/>
     <Header/>
     <header id="Daily_Header">

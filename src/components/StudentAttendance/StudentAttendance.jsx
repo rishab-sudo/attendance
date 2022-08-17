@@ -8,6 +8,7 @@ import data from "./StudentAttendanceData"
 
 const StudentAttendance = () => {
   const [value, onChange] = useState(new Date());
+  
   return (
     <div>
       <Sidebar/>
@@ -136,10 +137,11 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
   </ListGroup>  
   </div>
     </div>
-  
+  </div>
+
    
-    </div>
-    </div>
+    
+</div>
   )
 }
 

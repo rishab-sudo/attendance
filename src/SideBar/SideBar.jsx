@@ -32,13 +32,13 @@ const routes = [
     subRoutes: [
       {
         path: "/StudentAttendance",
-        name: "StudentAttendance",
-        icon: <FaLock />,
+        name: "Attendance",
+        // icon: <FaLock />,
       },
       {
         path: "/StudentProfile",
-        name: "StudentProfile ",
-        icon: <FaUser />,
+        name: "Profile ",
+        // icon: <FaUser />,
       },
       
     ],

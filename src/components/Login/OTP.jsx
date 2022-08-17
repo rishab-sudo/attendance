@@ -27,9 +27,10 @@ const OTP = () => {
     </div>
     
    
-  <div className="col" id='OTPForm_container'>
+  <div className="col" id='OTPForm_container'style={{border:"solid",borderColor:"#eeeeee",}}>
+    <div className="OTP_formImg">
     <ReactRoundedImage 
-          className="formImg"
+          
           image={OTPimg}
           roundedColor="#321124"
           imageWidth="120"
@@ -37,7 +38,8 @@ const OTP = () => {
           roundedSize="1"
           borderRadius="70"
         />
-        <div id="form_heading">
+        </div>
+        <div id="OTPform_heading">
     <h3>OTP Verification</h3>
     <h6 style={{color:"gray"}}>Enter the OTP sent to your email address<br></br>
     teachers@gmail.com to reset your password</h6>
