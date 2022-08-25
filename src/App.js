@@ -11,6 +11,8 @@ import ForgotPassword from "./components/Login/ForgotPassword"
 import OTP from "./components/Login/OTP"
 import ResetPassword from "./components/Login/ResetPassword"
 import PrivateRoutes from  "./utils/PrivateRoutes"
+import StudentProfile from "../src/components/StudentAttendance/StudentProfile"
+import Documents from "../src/components/Documents/Documents"
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path="/Dashboard" element={<DashBoard />} />
           <Route path="/DailyAttendance" element={<DailyAttendance />} />
           <Route path="/StudentAttendance" element={<StudentAttendance />} />
+          <Route path="/StudentProfile" element={<StudentProfile />} />
+          <Route path="/Documents" element={<Documents />} />
           </Route>
         </Routes>
  

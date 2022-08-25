@@ -73,7 +73,7 @@ main {
   display: none;
 }
 .routes {
-margin-top: 15px;
+margin-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -82,6 +82,7 @@ margin-top: 15px;
 }
 /* icons */
 .link {
+  margin-top: 2px;
   text-decoration: none;
   height: 45px;
   font-size: 1.1rem;
@@ -726,7 +727,7 @@ width: 18px;
 }
 #Daily_Header{
   width: auto;
-  height: 9.5rem;
+  height: 9.8rem;
   background-color: #FD8473;
 }
 #subHeader_container{
@@ -737,11 +738,12 @@ width: 18px;
 }
 #headingg{
   color: #002154;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding-top: 12px;
   margin-left: 2px;
 }
 #sub_heading{
+  font-size: 1.2rem;
   color: #F5FAFD;
   margin-top: -12px;
   margin-left: 2px;
@@ -768,7 +770,8 @@ width: 18px;
   margin-top:8px;
   height: 2rem;
   width: auto;
-  border: solid;
+  
+  border:  1px black;
   }
 #Daily_table_container{
   width: 78%;
@@ -785,6 +788,14 @@ border-radius: 50%;
  margin-right: 8px;
   
 }
+#dropdownMenuButton1{
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: none;
+}
+#drop_content{
+  height: 3.5rem;
+ }
 
 /* Student Attendance Css */
 #studentAttendance_mainContainer{
@@ -807,6 +818,60 @@ border-radius: 50%;
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
- 
+  }
+  /* Student Profile */
+  #Profile_headingg{
+    color: #002154;
+    font-size: 1.6rem;
+    padding-top: 12px;
+    margin-left: 2px;
+  }
+  #Profile_sub_heading{
+    color: #F5FAFD;
+    font-size: 1.2rem;
+    margin-top: -12px;
+    margin-left: 2px;
+  }
 
- }
+/* Documents Css */
+#sub_header_container{
+  margin-left: 270px;
+  display: flex;
+
+}
+#btn_container{
+  margin-left: auto;
+  margin-right: 6rem;
+ margin-top: auto;
+margin-bottom: auto;
+}
+#btn{
+  background-color: #002154;
+color: White;
+border-radius: 5px;
+height: 2.5rem;
+width: 11rem;
+}
+  #Documents_table_container{
+    background-color: #F9FCFD;
+    margin-left: 270px; 
+    height: auto;
+    width: 78%;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+  #Doc_table_header_content{
+    display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  }
+  #Doc_img{
+    height: 100px;
+  }
+   #Title_text{
+font-size: 14px;
+} 
+  #description_text{
+    font-size: 14px;
+  }
+

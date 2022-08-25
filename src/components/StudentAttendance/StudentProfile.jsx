@@ -1,30 +1,22 @@
-import React,{useRef,useState}from "react";
-import DatePicker from 'react-date-picker';
-import LoginImg from "../../assests/LoginImg.png"
-import "../../App.css"
+import React,{useState} from 'react'
+import Sidebar from '../../SideBar/SideBar'
+import Header from '../DashBoard/Header'
 import {BiSearch} from "react-icons/bi";
-import Sidebar from "../../../src/SideBar/SideBar"
-import Header from "../DashBoard/Header"
+import DatePicker from 'react-date-picker';
 import ListGroup from 'react-bootstrap/ListGroup';
-import data from "./Dailydata"
-import { FaCheckCircle } from "react-icons/fa";
-import Dropdown from './Dropdown';
-
-
-function BasicExample() {
-
+import data from "./StudentAttendanceData"
+const Profile = () => {
   const [value, onChange] = useState(new Date());
-
-    return (
-    <>
-
-    <Sidebar/>
+  return (
+    <div>
+       <Sidebar/>
     <Header/>
+
     <header id="Daily_Header">
       <div id="subHeader_container">
-     <p id="headingg">Daily Attendance</p>
-     <p id="sub_heading">Dashboard / Daily Attendance</p>
-     <div id="content_container">
+     <p id="Profile_headingg">Student-Profile</p>
+     <p id="Profile_sub_heading">Dashboard / Student / Profile</p>
+     {/* <div id="content_container">
      <select class="form-select form-select-lg mb-0" 
      aria-label=".form-select-lg example"
      style={{width:"12rem",height:"2.5rem",borderRadius:"15px",fontSize:"1rem",marginRight:"15px"}}>
@@ -43,17 +35,36 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
     <div id="Daily_datepicker">
       <DatePicker onChange={onChange} value={value} style={{}}/>
     </div>
-  </div>
+  </div> */}
 </div>
 </header>
 
-<div id="DailyAttendance_mainContainer" >
-<div className="div" style={{marginLeft:"270px",padding:"1rem"}}>
-<h4>B.tech</h4>
-<h6>computer science-1</h6>
+<div id="studentAttendance_mainContainer">
+
+<div id="Student_Table_Container">
+<div id="table_header_content">
+  <p style={{fontWeight:"",marginLeft:"2rem",fontSize:"1.5rem"}}>Profile</p>
+  
+  <select class="form-select form-select-lg mb-0" 
+     aria-label=".form-select-lg example"
+     style={{width:"12rem",height:"2.5rem",borderRadius:"15px",fontSize:"1rem",marginRight:"15px",marginLeft:"auto",}}>
+  <option selected >Select Course</option>
+  <option value="1">One</option>
+</select>
+<select class="form-select form-select-lg mb-0" 
+aria-label=".form-select-lg example"
+style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marginRight:"15px"}}>
+  <option selected>Select Class</option>
+  <option value="1">One</option>
+</select>
+
+<div id="srch_icon_container" style={{marginRight:"2rem"}}>
+<BiSearch id="srch_icon" />
 </div>
 
-<div id="Daily_table_container">
+</div>
+
+<div id="Student_table">
 <ListGroup >
     <ListGroup.Item>
  <div class="container">
@@ -70,10 +81,15 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
        Student ID
        </div>
        
-       <div className=""style={{maxWidth:"42%"}}></div>
+       <div class="col" style={{textAlign:"center",fontWeight:"bold"}}>
+       Course
+       </div>
+       <div class="col" style={{textAlign:"center",fontWeight:"bold"}}>
+     Class
+       </div>
      
        <div class="col" style={{textAlign:"center",fontWeight:"bold"}}>
-       Attendance
+        Total Attendance
        </div>
        <div class="col" style={{textAlign:"center",fontWeight:"bold"}}>
        Actions
@@ -89,48 +105,40 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
       {data.SNo}
        </div>
        <div class="col" style={{textAlign:"center",display:"flex"}}>
-       <img src={LoginImg} id="circle" alt=""></img>
        {data.StudentName}
        </div>
        <div class="col" style={{textAlign:"center"}}>
        {data.StudentID}
        </div>
-       <div className=""style={{maxWidth:"42%"}}></div>
        <div class="col" style={{textAlign:"center"}}>
-       <FaCheckCircle style={{color:"lightgreen"}}/>
+       {data.Course}
        </div>
-       <div class="col" style={{textAlign:"center",marginTop:"-15px",marginBottom:""}}>
-    <Dropdown/>
-     </div>
+       <div class="col" style={{textAlign:"center"}}>
+       {data.Class}
+       </div>
+      
+       <div class="col" style={{textAlign:"center"}}>
+       {data.TotalAttendance}
+       </div>
+       <div class="col" style={{textAlign:"center"}}>
+        <i type="button"
+        onClick={""}
+        >...</i>
+
+
+     
+       </div>
    </div>
 </div>
    </ListGroup.Item>
   ))}  
   </ListGroup>  
-  
   </div>
+    </div>
   </div>
-  
-   </>
-  );
+
+    </div>
+  )
 }
 
-export default BasicExample;
-    
-
-
-
-   
-     
-     
-      
-      
-      
-       
-     
-
-   
-
-         
-
-  
+export default Profile

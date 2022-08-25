@@ -5,7 +5,7 @@ import Sidebar from "../../../src/SideBar/SideBar"
 import Header from "../DashBoard/Header"
 import ListGroup from 'react-bootstrap/ListGroup';
 import data from "./StudentAttendanceData"
-
+import Dropdown from 'react-bootstrap/Dropdown';
 const StudentAttendance = () => {
   const [value, onChange] = useState(new Date());
   
@@ -32,7 +32,7 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
   <option value="1">One</option>
 </select>
 <div id="srch_icon_container">
-<BiSearch id="srch_icon"/>
+<BiSearch id="srch_icon" onClick={""} type="button" />
 </div>
     <div id="Daily_datepicker">
       <DatePicker onChange={onChange} value={value} style={{}}/>
@@ -45,7 +45,7 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
 
 <div id="Student_Table_Container">
 <div id="table_header_content">
-  <p style={{fontWeight:"bold",marginLeft:"2rem"}}>Attendance</p>
+  <p style={{fontWeight:"",marginLeft:"2rem",fontSize:'1.5rem'}}>Attendance</p>
   
   <select class="form-select form-select-lg mb-0" 
      aria-label=".form-select-lg example"
@@ -61,7 +61,7 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
 </select>
 
 <div id="srch_icon_container" style={{marginRight:"2rem"}}>
-<BiSearch id="srch_icon" />
+<BiSearch id="srch_icon" onClick={""} type="button" />
 </div>
 
 </div>
@@ -123,9 +123,8 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
        {data.TotalAttendance}
        </div>
        <div class="col" style={{textAlign:"center"}}>
-        <i type="button"
-        onClick={""}
-        >...</i>
+     
+
 
 
      
@@ -135,14 +134,17 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
    </ListGroup.Item>
   ))}  
   </ListGroup>  
+
   </div>
+
     </div>
-  </div>
-
-   
-    
+   </div>
 </div>
-  )
-}
+   )
+ }
+ 
+ export default StudentAttendance
+   
+ 
 
-export default StudentAttendance
+
