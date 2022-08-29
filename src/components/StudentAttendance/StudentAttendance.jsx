@@ -5,7 +5,7 @@ import Sidebar from "../../../src/SideBar/SideBar"
 import Header from "../DashBoard/Header"
 import ListGroup from 'react-bootstrap/ListGroup';
 import data from "./StudentAttendanceData"
-import Dropdown from 'react-bootstrap/Dropdown';
+import StdDropdown from "./StdDropdown";
 const StudentAttendance = () => {
   const [value, onChange] = useState(new Date());
   
@@ -15,8 +15,8 @@ const StudentAttendance = () => {
     <Header/>
     <header id="Daily_Header">
       <div id="subHeader_container">
-     <p id="headingg">Daily Attendance</p>
-     <p id="sub_heading">Dashboard / Daily Attendance</p>
+     <p id="headingg">Student-Attendance</p>
+     <p id="sub_heading">Dashboard / Student Attendance</p>
      <div id="content_container">
      <select class="form-select form-select-lg mb-0" 
      aria-label=".form-select-lg example"
@@ -72,10 +72,10 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
  <div class="container">
      <div class="row align-items-start">
   
-      <div class="col" style={{textAlign:"center",fontSize:"",fontWeight:"bold"}}>
+      <div class="col" style={{textAlign:"center",fontSize:"",fontWeight:"bold",verticalAlign:""}}>
        S.No
        </div>
-       <div class="col" style={{textAlign:"center" ,fontWeight:"bold"}}>
+       <div class="col" style={{textAlign:"center" ,fontWeight:"bold",verticalAlign:""}}>
        Student Name
        </div>
         
@@ -106,7 +106,7 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
       <div class="col" style={{textAlign:"center"}}>
       {data.SNo}
        </div>
-       <div class="col" style={{textAlign:"center",display:"flex"}}>
+       <div class="col" style={{textAlign:"center",display:""}}>
        {data.StudentName}
        </div>
        <div class="col" style={{textAlign:"center"}}>
@@ -122,9 +122,9 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
        <div class="col" style={{textAlign:"center"}}>
        {data.TotalAttendance}
        </div>
-       <div class="col" style={{textAlign:"center"}}>
+       <div class="col" style={{textAlign:"center",marginTop:"-15px"}}>
      
-
+       <StdDropdown/>
 
 
      

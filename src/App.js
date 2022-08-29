@@ -11,10 +11,11 @@ import ForgotPassword from "./components/Login/ForgotPassword"
 import OTP from "./components/Login/OTP"
 import ResetPassword from "./components/Login/ResetPassword"
 import PrivateRoutes from  "./utils/PrivateRoutes"
-import StudentProfile from "../src/components/StudentAttendance/StudentProfile"
+import StudentProfile from "../src/components/StudentAttendance/StudentProfile/StudentProfile"
 import Documents from "../src/components/Documents/Documents"
 
-
+import StdModal from "../src/components/StudentAttendance/StdModal"
+import StdPfModal from "../src/components/StudentAttendance/StudentProfile/StdPfModal"
 function App() {
   return (
     <div className="App">
@@ -32,9 +33,13 @@ function App() {
           <Route element={<PrivateRoutes />}>
           <Route path="/Dashboard" element={<DashBoard />} />
           <Route path="/DailyAttendance" element={<DailyAttendance />} />
+  
           <Route path="/StudentAttendance" element={<StudentAttendance />} />
+          <Route path="/StdModal" element={<StdModal />} />
           <Route path="/StudentProfile" element={<StudentProfile />} />
+          <Route path="/StdPfModal" element={<StdPfModal />} />
           <Route path="/Documents" element={<Documents />} />
+        
           </Route>
         </Routes>
  

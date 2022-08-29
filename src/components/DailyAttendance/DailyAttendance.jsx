@@ -70,7 +70,7 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
        Student ID
        </div>
        
-       <div className=""style={{maxWidth:"42%"}}></div>
+       <div className=""style={{maxWidth:"34%"}}></div>
      
        <div class="col" style={{textAlign:"center",fontWeight:"bold"}}>
        Attendance
@@ -88,14 +88,14 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
       <div class="col" style={{textAlign:"center"}}>
       {data.SNo}
        </div>
-       <div class="col" style={{textAlign:"center",display:"flex"}}>
+       <div class="col" style={{textAlign:"center",display:"flex",alignContent:"center",paddingLeft:"20px"}}>
        <img src={LoginImg} id="circle" alt=""></img>
        {data.StudentName}
        </div>
        <div class="col" style={{textAlign:"center"}}>
        {data.StudentID}
        </div>
-       <div className=""style={{maxWidth:"42%"}}></div>
+       <div className=""style={{maxWidth:"34%"}}></div>
        <div class="col" style={{textAlign:"center"}}>
        <FaCheckCircle style={{color:"lightgreen"}}/>
        </div>

@@ -1,10 +1,11 @@
 import React,{useState} from 'react'
-import Sidebar from '../../SideBar/SideBar'
-import Header from '../DashBoard/Header'
+import Sidebar from '../../../SideBar/SideBar'
+import Header from '../../DashBoard/Header'
 import {BiSearch} from "react-icons/bi";
 import DatePicker from 'react-date-picker';
 import ListGroup from 'react-bootstrap/ListGroup';
-import data from "./StudentAttendanceData"
+import data from "../StudentAttendanceData"
+import StdPfDropdown from"./StdPfDropdown"
 const Profile = () => {
   const [value, onChange] = useState(new Date());
   return (
@@ -120,11 +121,9 @@ style={{width:"12rem",height:"2.5rem",borderRadius:"15px" ,fontSize:"1rem" ,marg
        <div class="col" style={{textAlign:"center"}}>
        {data.TotalAttendance}
        </div>
-       <div class="col" style={{textAlign:"center"}}>
-        <i type="button"
-        onClick={""}
-        >...</i>
-
+       <div class="col" style={{textAlign:"center",marginTop:"-15px"}}>
+       
+<StdPfDropdown/>
 
      
        </div>
